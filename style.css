@@ -1,0 +1,45 @@
+.top-bar {
+    background-color:blue;
+    color: white;
+    height:3rem;
+    display:flex;   
+    align-items: center;
+   
+    
+}
+.top-bar h3
+{
+
+    margin-left:10px;
+    align-content: center;
+ 
+}
+.nav-item-1
+    {
+        display:flex;
+        position: relative;
+        justify-content: space-between;
+        width: 20%;
+        padding-top: 10px;
+        left:10px;      
+        list-style: none;
+        align-content: center;
+        text-decoration: none;
+      
+    }
+    .nav-item-2
+    {
+        display:flex;
+        position: relative;
+        justify-content: space-between;
+        width: 20%;
+        padding-top: 10px;
+        left:-20px;      
+        list-style: none;
+        align-content: center;
+        text-decoration: none;
+      
+    }
+    
+    
+   
