@@ -14,7 +14,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <title>Admin View</title>
+    <title>Admin | Edit</title>
     <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
 
     
@@ -25,17 +25,17 @@
     <div class="top-bar">
         <h4>Admin</h4>
         <ul class="nav-item-1">
-            <li class="active">
+            <li>
                 <a href="index.html">Dashboard</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="pages.html">Pages</a>
             </li>
             <li>
                 <a href="posts.html">Posts</a>
             </li>
             <li>
-                <a href="#">Users</a>
+                <a href="users.html">Users</a>
             </li>
         </ul>
         <ul class="nav-item-2">
@@ -53,7 +53,7 @@
             <div class="row">
 
                 <div class="col-md-10">
-                    <h4><i class="bi bi-gear-fill fw-light p-2"></i>Dashboard<small class="p-2">Manage Your Site</small>
+                    <h4><i class="bi bi-gear-fill fw-light p-2"></i>Edit Page<small class="p-2">About</small>
                     </h4>
                 </div>
                 <div class="col-md-2">
@@ -76,8 +76,10 @@
 
     <section id="breadcrumb ">
         <div class="container">
-            <ol class="breadcrumb">
-                <li class="active p-2">Dashboard</li>
+            <ol class="breadcrumb" style="justify-content:space-around;align-items:center;">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li class="active p-2">Edit</li>
             </ol>
         </div>
     </section>
@@ -126,95 +128,43 @@
                         <div class="list-group">
 
                             <a href="#" class="list-group-item text-center bg-primary text-white" aria-current="true">
-                                Website Overview
+                                Edit Page
                             </a>
-                            <div class="row m-2">
-
-                                <div class="col-md-3 text-center">
-                                    <div class="card">
-                                        <h2>
-                                            <i class="bi bi-person-fill"></i>
-                                            <small>23</small>
-                                        </h2>
-                                        <h4>Users</h4>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-3 text-center">
-                                    <div class="card">
-                                        <h2>
-                                            <i class="bi bi-file-earmark-richtext"></i>
-                                            <small>23</small>
-                                        </h2>
-                                        <h4>Pages</h4>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <div class="card">
-                                        <h2>
-                                            <i class="bi bi-pencil"></i>
-                                            <small>23</small>
-                                        </h2>
-                                        <h4>Posts</h4>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <div class="card">
-                                        <h2>
-                                            <i class="bi bi-clipboard-data"></i>
-                                            <small>203</small>
-                                        </h2>
-                                        <h4>Visitors</h4>
-                                    </div>
-
-                                </div>
+                            <form class="p-2">
+                            <div class="form-group ">
+                                <label>Page Title</label>
+                                <input type="text" class="form-control" placeholder="Page Title">
                             </div>
-
-                        </div>
-                    </section>
-                    <div class="col-md-12">
-                        <section class="bg-secondary mb-4">
+                            <div class="form-group ">
+                                <label>Page Body</label>
+                                <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+                            </div>
+        
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked>Published
+                                </label>
+                            </div>
+        
+                            <div class="form-group">
+                                <label>Meta Tags</label>
+                                <input type="text" class="form-control" placeholder="Add Some Tags..." value="tag1, tag2">
+                            </div>
+        
+                            <div class="form-group">
+                                <label>Meta Description</label>
+                                <input type="text" class="form-control" placeholder="Add Meta Description">
+                            </div>
+                            <input type="submit" class="btn btn-primary " value="Submit">
+                            </form>
                             
-    
-                                <a href="#" class="list-group-item text-center bg-primary text-white" aria-current="true">
-                                    Users
-                                </a>                                    
-                                        <div class="card">
-                                            <table class="table table-sm">
-                                                <thead>
-                                                  <tr>                                        
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">contact</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>                                                    
-                                                    <td>Wai</td>
-                                                    <td>waiyankyawmc@mtu.edu.mm</td>
-                                                    <td>@mdo</td>
-                                                  </tr>
-                                                  <tr>
-                                                    
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                  </tr>
-                                                
-                                                </tbody>
-                                              </table>
-                                            
-                                        </div>                                  
-                              
-    
-                            </div>
-                        </section>
+
                         </div>
-                    </div>
+                        
+                    </section>
                     
+                </div>
+                     
 
                     
                     
@@ -272,11 +222,6 @@
         <footer id="footer">
             <p>Copyright Admin, &copy;2021</p>
         </footer>
- 
-
-
-
-
 
 
     <script>
